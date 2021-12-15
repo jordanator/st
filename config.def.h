@@ -230,7 +230,7 @@ static MouseShortcut mshortcuts[] = {
 };
 
 /* Internal keyboard shortcuts. */
-#define MODKEY Mod1Mask
+#define MODKEY Mod4Mask
 #define TERMMOD (Mod4Mask|ShiftMask)
 
 MouseKey mkeys[] = {
@@ -286,7 +286,7 @@ static Shortcut shortcuts[] = {
   { MODKEY,               XK_l,           externalpipe,   {.v = openurlcmd } },
   { MODKEY,               XK_y,           externalpipe,   {.v = copyurlcmd } },
   { MODKEY,               XK_o,           externalpipe,   {.v = copyoutput } },
-  { TERMMOD,              XK_Return,      newterm,        {.i =  0} },
+  { ControlMask | ShiftMask,  XK_Return,      newterm,        {.i =  0} },
 
 };
 
